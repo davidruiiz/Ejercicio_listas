@@ -70,10 +70,23 @@ print("lista = ", lista)
 def ejercicio1():
     lista = ["P", "t"]
     # TODO
+    lista.insert(1,'y')
+    lista.insert(3,'h')
+    lista.insert(4,'o')
+    lista.insert(5, 'n')
     assert "".join(lista) == "Python"
 
 def ejercicio2():
     lista = [1, 4, 2, 5, 4, 3, 4, 7, 5, 8, 9]
     # TODO
+    lista.remove(9)
+    lista.remove(8)
+    lista.remove(7)
+    lista.pop(1)
+    lista.pop(2)
+    lista.pop(2)
+
     assert lista == list(range(1, 6))
 
+print(ejercicio1())
+print(ejercicio2())
